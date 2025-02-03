@@ -5,10 +5,8 @@
 </template>
 
 <script setup>
-const = {
-    
-}
 
+const 
 
 </script>
 
