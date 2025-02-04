@@ -6,7 +6,9 @@
 
 <script setup>
 
-const 
+const shop = {
+
+}
 
 </script>
 
