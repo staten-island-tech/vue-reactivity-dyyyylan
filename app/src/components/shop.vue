@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-<div v-for="shop in shops" :key="shop.name">
+    <div class="container ">
+<div v-for="shop in shops" :key="shop.name" class="">
 </div>
 
     </div>
