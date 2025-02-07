@@ -1,8 +1,7 @@
 <template>
-    <div class="container ">
+    <div class="container flex m-auto px-[5vw] flex-wrap justify-around w-[85vw] rounded">
 <div v-for="shop in shops" :key="shop.name" class="">
 </div>
-
     </div>
 </template>
 
