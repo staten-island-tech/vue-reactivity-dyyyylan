@@ -1,9 +1,9 @@
 <script setup>
-import shop from '@/components/shop.vue';
+import shops from '@/components/shop.vue';
 </script>
 
 <template>
   <main>
-    <shop/>
+    <shops/>
   </main>
 </template>

@@ -1,13 +1,14 @@
 <template>
     <div class="container flex m-auto px-[5vw] flex-wrap justify-around w-[85vw] rounded">
-<div v-for="shop in shops" :key="shop.name" class="">
+      <div v-for="shop in shops" :key="shop.name" class="card bg-gray-500">
+  <h3> {{ shop.name }}</h3>
 </div>
     </div>
 </template>
 
 <script setup>
 
-const shop = [
+const shops = [
   { name: "banana", price: 0.5, image: "banana.jpg" },
   { name: "broccoli", price: 1.2, image: "broccoli.jpg" },
   { name: "carrot", price: 0.8, image: "carrot.jpg" },
@@ -23,3 +24,4 @@ const shop = [
 <style scoped>
 
 </style>
+
