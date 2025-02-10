@@ -7,13 +7,13 @@
         <h3 class="text-lg font-bold">{{ shop.name }}</h3>
         <img :src="shop.image" :alt="shop.name" class="w-full h-auto rounded-md">
         <h2 class="text-sm mt-2">{{ "Price: $" + shop.price }}</h2>
-        <button class="addtocart px-6 py-2 bg-gray-400 text-white rounded-lg shadow-lg hover:bg-gray-600 hover:shadow-xl transition duration-200 ease-in-out">Add to cart</button>
+        <button type="submit" class="addtocart px-6 py-2 bg-gray-400 text-white rounded-lg shadow-lg hover:bg-gray-600 hover:shadow-xl transition duration-200 ease-in-out">Add to cart</button>
       </div>
     </div>
 
-    <div class="relative w-full p-4">
-      <div class="sticky top-0 left-[100px] bg-white z-10 shadow-md">
-      <img src="/cart.jpg" alt="" class="cartimg w-[50%]">
+    <div class="relative w-[40%] left-[14vw]">
+      <div class="sticky top-0">
+      <img src="/cart.jpg" alt="" class="cartimg w-[100%] h-max">
       </div>
     </div>
   </div>
