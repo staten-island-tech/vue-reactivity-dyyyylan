@@ -1,22 +1,35 @@
 <template>
-    <div class="container flex m-auto px-[5vw] flex-wrap justify-around w-[85vw] rounded">
-      <div v-for="shop in shops" :key="shop.name" class="card bg-gray-500">
-  <h3> {{ shop.name }}</h3>
-</div>
+  <div class="flex">
+
+    <div class="flex flex-col w-[20vw] min-h-screen bg-gray-200 p-4 shadow-lg">
+      <div v-for="shop in shops" :key="shop.name"
+           class="card w-full mb-4 p-4 bg-white shadow-md rounded-lg text-center">
+        <h3 class="text-lg font-bold">{{ shop.name }}</h3>
+        <img :src="shop.image" :alt="shop.name" class="w-full h-auto rounded-md">
+        <h2 class="text-sm mt-2">{{ "Price: $" + shop.price }}</h2>
+        <button class="addtocart px-6 py-2 bg-gray-400 text-white rounded-lg shadow-lg hover:bg-gray-600 hover:shadow-xl transition duration-200 ease-in-out">Add to cart</button>
+      </div>
     </div>
+
+    <div class="relative w-full p-4">
+      <div class="sticky top-0 left-[100px] bg-white z-10 shadow-md">
+      <img src="/cart.jpg" alt="" class="cartimg w-[50%]">
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 
 const shops = [
-  { name: "banana", price: 0.5, image: "banana.jpg" },
-  { name: "broccoli", price: 1.2, image: "broccoli.jpg" },
-  { name: "carrot", price: 0.8, image: "carrot.jpg" },
-  { name: "potato", price: 0.6, image: "potato.jpg" },
-  { name: "tomato", price: 1.0, image: "tomato.jpg" },
-  { name: "milk", price: 2.5, image: "milk.jpg" },
-  { name: "eggs", price: 3.0, image: "eggs.jpg" },
-  { name: "Tyler Tyndale", price: 5.0, image: "tyler.jpg"}
+  { name: "banana", price: 4999.99, image: "banana.jpg" },
+  { name: "broccoli", price: 1.49, image: "broc.jpg" },
+  { name: "carrot", price: 5.79, image: "carrot.jpg" },
+  { name: "potato", price: 60.19, image: "potato.jpg" },
+  { name: "tomato", price: 4.20, image: "tomato.jpg" },
+  { name: "milk", price: 10000.00, image: "milk.jpg" },
+  { name: "eggs", price: 300.00, image: "eggs.jpg" },
+  { name: "Tyler Tyndale", price: 0.50, image: "tyler.jpg"}
 ];
 
 </script>
