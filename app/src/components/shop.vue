@@ -5,9 +5,9 @@
       <div v-for="shop in shops" :key="shop.name"
            class="card w-full mb-4 p-4 bg-white shadow-md rounded-lg text-center">
         <h3 class="text-lg font-bold">{{ shop.name }}</h3>
-        <img :src="shop.image" :alt="shop.name" class="w-full h-auto rounded-md">
+        <img :src="shop.image" :alt="shop.image" class="w-full h-auto rounded-md">
         <h2 class="text-sm mt-2">{{ "Price: $" + shop.price }}</h2>
-        <button type="submit" class="addtocart px-6 py-2 bg-gray-400 text-white rounded-lg shadow-lg hover:bg-gray-600 hover:shadow-xl transition duration-200 ease-in-out">Add to cart</button>
+        <button type="submit" class="addtocart px-6 py-2 bg-gray-400 text-white rounded-lg shadow-lg hover:bg-gray-600 hover:shadow-xl transition duration-200 ease-in-out" @click="console.log('added ' + shop.name)">Add to cart</button>
       </div>
     </div>
 
