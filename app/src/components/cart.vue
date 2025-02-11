@@ -7,8 +7,8 @@
 <script setup>
 import { reactive } from "vue";
 
-const cart = reactive[
-    {}
+const store = reactive[
+    cart = []
 ]
 
 </script>
