@@ -29,7 +29,8 @@ const shops = [
   { name: "tomato", price: 4.20, image: "tomato.jpg" },
   { name: "milk", price: 10000.00, image: "milk.jpg" },
   { name: "eggs", price: 300.00, image: "eggs.jpg" },
-  { name: "Tyler Tyndale", price: 0.50, image: "tyler.jpg"}
+  { name: "Tyler Tyndale", price: 0.50, image: "tyler.jpg"},
+  { name: "avocado", price: 3, image: "image.png"}
 ];
 
 </script>
