@@ -1,6 +1,5 @@
 <script setup>
 import shops from '@/components/shop.vue';
-import cart from '@/components/cart.vue';
 
 </script>
 
