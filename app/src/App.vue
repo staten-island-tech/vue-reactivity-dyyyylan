@@ -32,7 +32,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
+
     flex-wrap: wrap;
   }
 
