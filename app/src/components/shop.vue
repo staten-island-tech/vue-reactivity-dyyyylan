@@ -12,15 +12,15 @@
     </div>
 
     <div class="relative w-[40%] left-[14vw]">
-        <div v-if="cart.length > 0" class="p-4 bg-white shadow-md rounded-lg mt-4">
+
           <h2 class="text-lg font-bold">Cart Items:</h2>
           <ul>
-            <li v-for="(item, index) in cart" :key="index" class="mt-2">
-              {{ item.name }} - ${{ item.price.toFixed(2) }}
-              <button @click="removeFromCart(index)" class="ml-2 px-2 py-1 bg-red-500 text-white rounded">X</button>
+            <li v-for="(item) in cart" :key="item.name" class="mt-2">
+              {{ item.name }} - ${{ item.price }}
+              <button @click="removeFromCart(item)" class="ml-2 px-2 py-1 bg-red-500 text-white rounded">X</button>
             </li>
           </ul>
-        </div>
+ 
 
     </div>
   </div>
@@ -39,14 +39,15 @@ const cart = ref([]);
 
 const addToCart = (shop) => {
   cart.value.push(shop);
-  console.log("Added to cart:", shop.name);
+
 };
 
-
-const removeFromCart = (index) => {
-  cart.value.splice(index, 1);
+const removeFromCart = (itemToRemove) => {
+  const index = cart.value.findIndex(item => item.name === itemToRemove.name);
+  if (index !== -1) {
+    cart.value.splice(index, 1);
+  }
 };
-
 const shops = [
   { name: "banana", price: 4999.99, image: "banana.jpg" },
   { name: "broccoli", price: 1.49, image: "broc.jpg" },
