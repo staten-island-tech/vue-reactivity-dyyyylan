@@ -31,7 +31,7 @@ import { ref, defineProps } from 'vue';
 
 
 defineProps({
-  shops: Object
+  shop: Object
 });
 
 const cart = ref([]);
